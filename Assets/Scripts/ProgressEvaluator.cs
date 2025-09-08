@@ -1,5 +1,5 @@
 #define Z40
-//#define P50
+#define P50
 //#define P60
 
 using System;
