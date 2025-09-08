@@ -1,4 +1,4 @@
-//#define Z40
+#define Z40
 //#define P50
 //#define P60
 
