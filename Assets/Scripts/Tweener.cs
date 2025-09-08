@@ -16,7 +16,10 @@ public class Tweener : MonoBehaviour
                 // fraction of journey completed
                 float timeFraction = (Time.time - activeTween.StartTime) / activeTween.Duration;
 
-                // lerp from startPos to endPos based on fraction
+                // cubic easing-in (slower start, faster finish)
+                timeFraction = Mathf.Pow(timeFraction, 3);
+
+                // lerp from startPos to endPos based on eased fraction
                 Vector3 newPos = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, timeFraction);
 
                 activeTween.Target.position = newPos;
@@ -29,6 +32,7 @@ public class Tweener : MonoBehaviour
             }
         }
     }
+
 
     public void AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration)
     {
