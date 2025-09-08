@@ -8,6 +8,12 @@ public class Tween
     public float StartTime { get; private set; }
     public float Duration { get; private set; }
 
-    // Empty constructor for now
-    public Tween() { }
+    public Tween(Transform target, Vector3 startPos, Vector3 endPos, float startTime, float duration)
+    {
+        Target = target;
+        StartPos = startPos;
+        EndPos = endPos;
+        StartTime = startTime;
+        Duration = duration;
+    }
 }

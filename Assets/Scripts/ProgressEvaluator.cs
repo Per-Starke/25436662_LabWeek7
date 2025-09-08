@@ -1,6 +1,6 @@
 #define Z40
 #define P50
-//#define P60
+#define P60
 
 using System;
 using System.Collections;
