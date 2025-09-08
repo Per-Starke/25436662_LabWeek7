@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   studentNumber: 25436662
-  bandReached: 4
+  bandReached: 7
 --- !u!1 &1436533996
 GameObject:
   m_ObjectHideFlags: 0
